@@ -9,20 +9,20 @@
 
 <p align="center">
   <!-- Second Row - Other Badges -->
-  <a href="https://github.com/daveved/cdk-diff-action/actions/workflows/ci.yml">
-    <img src="https://github.com/daveved/cdk-diff-action/actions/workflows/ci.yml/badge.svg" alt="continuous integration"/>
+  <a href="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/ci.yml">
+    <img src="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/ci.yml/badge.svg" alt="continuous integration"/>
   </a>
   <a href="./badges/coverage.svg">
     <img src="./badges/coverage.svg" alt="coverage"/>
   </a>
-  <a href="https://github.com/daveved/cdk-diff-action/actions/workflows/linter.yml">
-    <img src="https://github.com/daveved/cdk-diff-action/actions/workflows/linter.yml/badge.svg" alt="lint code base"/>
+  <a href="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/linter.yml">
+    <img src="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/linter.yml/badge.svg" alt="lint code base"/>
   </a>
-  <a href="https://github.com/daveved/cdk-diff-action/actions/workflows/codeql-analysis.yml">
-    <img src="https://github.com/daveved/cdk-diff-action/actions/workflows/codeql-analysis.yml/badge.svg" alt="codeql"/>
+  <a href="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/codeql-analysis.yml/badge.svg" alt="codeql"/>
   </a>
-  <a href="https://github.com/daveved/cdk-diff-action/actions/workflows/check-dist.yml">
-    <img src="https://github.com/daveved/cdk-diff-action/actions/workflows/check-dist.yml/badge.svg" alt="check dist/"/>
+  <a href="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/check-dist.yml">
+    <img src="https://github.com/0xdsqr/cdk-diff-action/actions/workflows/check-dist.yml/badge.svg" alt="check dist/"/>
   </a>
 </p>
 
@@ -36,12 +36,12 @@ Most of the template for the action was taken from [here](https://github.com/act
 
 ## Usage
 
-Refer to the [actions.yml](https://github.com/DaveVED/cdk-diff-action/blob/main/action.yml)for detailed configuration options.
+Refer to the [actions.yml](https://github.com/0xdsqr/cdk-diff-action/blob/main/action.yml)for detailed configuration options.
 
 ### Basic Configuration
 
 ```yaml
-- uses: daveved/cdk-diff-action@v0.1.0
+- uses: 0xdsqr/cdk-diff-action@v0.1.0
   with:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -52,7 +52,7 @@ Refer to the [actions.yml](https://github.com/DaveVED/cdk-diff-action/blob/main/
 # Example of referencing the output from the action
 - name: Use My Action
   id: myaction
-  uses: daveved/cdk-diff-action@v0.1.0
+  uses: 0xdsqr/cdk-diff-action@v0.1.0
   with:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -87,7 +87,7 @@ For version 1, ensure your CI is set up with AWS credentials and the AWS CDK bef
     aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
     aws-region: "us-east-1"
 
-- uses: daveved/cdk-diff-action@v0.1.0
+- uses: 0xdsqr/cdk-diff-action@v0.1.0
   with:
     repo-token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -112,4 +112,4 @@ The action comprises several key functions:
 
 See some example diff audits below.
 
-![Example Diff Simple](https://github.com/daveved/cdk-diff-action/blob/main/artifacts/example-diff.png?raw=true)
+![Example Diff Simple](https://github.com/0xdsqr/cdk-diff-action/blob/main/artifacts/example-diff.png?raw=true)
